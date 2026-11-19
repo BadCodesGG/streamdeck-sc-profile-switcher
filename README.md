@@ -1,4 +1,4 @@
-<p align="center"><img src="docs/images/icon.png" width="128" alt="SC Profile Switcher icon"></p>
+<p align="center"><img src="docs/images/hero.png" alt="SC Profile Switcher: switch Simucube Tuner pedal and wheelbase profiles from a Stream Deck key"></p>
 
 <h1 align="center">SC Profile Switcher</h1>
 
@@ -16,6 +16,8 @@ Free, for Simucube Tuner 3.2+ on Windows.
 
 Changing cars or sims means opening Tuner and clicking through two profile lists. With SC Profile Switcher you set that up once per key: press **GT3**, and the pedal and the wheelbase both switch in about a quarter of a second, without bringing Tuner to the front.
 
+<p align="center"><img src="docs/images/demo.gif" width="800" alt="Pressing a Profile Set key switches the pedal and wheelbase profiles and shows a check mark"></p>
+
 ## Actions
 
 | Action | What it does |
@@ -23,7 +25,7 @@ Changing cars or sims means opening Tuner and clicking through two profile lists
 | **Profile Set** | Loads a pedal profile and a wheelbase profile together. Leave either on "Don't change". |
 | **Single Profile** | Loads one profile; the other device keeps its own. |
 
-Keys show the profile names (you can turn that off), a check mark when the switch went through, and a warning triangle when it did not.
+Keys show the profile names (tick "Hide profile names" to turn that off), a check mark when the switch went through, and a warning triangle when it did not. Pick a key icon from the **Icon** list (pedals, wheels, or no icon) and tick **Wet** to add a rain badge.
 
 ## Requirements
 
@@ -49,6 +51,8 @@ Keys show the profile names (you can turn that off), a check mark when the switc
 2. Drag **Profile Set** onto a key.
 3. In the settings below the keys, pick a **Pedal** profile and a **Wheelbase** profile. Use the refresh button next to a list after you add profiles in Tuner.
 4. Press the key. Both devices switch, and the key shows a check mark.
+
+<p align="center"><img src="docs/images/setup.png" width="600" alt="Profile Set settings: a Pedal profile, a Wheelbase profile, the key icon, the wet weather badge and the Hide profile names option"></p>
 
 Repeat for each car or sim. Use **Single Profile** when you only want to change one device, for example a wet-weather brake profile.
 
