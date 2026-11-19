@@ -1,0 +1,38 @@
+name: Device report
+description: Tell us whether switching works with your device, especially Simucube 2.
+labels: ["device-report"]
+body:
+  - type: input
+    id: device
+    attributes:
+      label: Device
+      placeholder: "Simucube 2 Pro"
+    validations:
+      required: true
+  - type: dropdown
+    id: works
+    attributes:
+      label: Does switching work?
+      options:
+        - "Yes, the device switches"
+        - "The profile is listed but the device does not switch"
+        - "The profile is not listed"
+    validations:
+      required: true
+  - type: input
+    id: type
+    attributes:
+      label: Device type number
+      description: If the profile appeared under "Other devices", the number shown as "(device type N)".
+      placeholder: "11"
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      placeholder: "Plugin 0.0.1, Stream Deck 7.1, Tuner 3.2.1"
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes and log
+      description: Anything else, plus the last lines of the plugin log if it did not work.
+      render: text

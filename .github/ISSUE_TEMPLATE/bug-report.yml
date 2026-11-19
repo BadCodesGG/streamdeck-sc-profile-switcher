@@ -1,0 +1,42 @@
+name: Bug report
+description: A key does not switch, shows a warning, or something else is wrong.
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you pressed, what you expected, and what the key or Tuner did instead.
+    validations:
+      required: true
+  - type: dropdown
+    id: action
+    attributes:
+      label: Action
+      options:
+        - Profile Set
+        - Single Profile
+        - Both
+    validations:
+      required: true
+  - type: input
+    id: devices
+    attributes:
+      label: Devices
+      placeholder: "ActivePedal Pro (brake), Simucube 3 Pro"
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      description: Plugin version, Stream Deck app version, Tuner version.
+      placeholder: "Plugin 0.0.1, Stream Deck 7.1, Tuner 3.2.1"
+    validations:
+      required: true
+  - type: textarea
+    id: log
+    attributes:
+      label: Plugin log
+      description: Paste the last 30 or so lines of %APPDATA%\Elgato\StreamDeck\Plugins\com.badcodes.sc-profile-switcher.sdPlugin\logs\com.badcodes.sc-profile-switcher.0.log
+      render: text
